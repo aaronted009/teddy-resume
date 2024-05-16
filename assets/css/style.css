@@ -1,0 +1,471 @@
+/**
+------------------------------------
+---------- FONTS ------------------
+------------------------------------
+**/
+
+/* FONTS ADDED */
+/* Work Sans Font */
+@font-face {
+    font-family: "WorkSans-SemiBold";
+    font-display: block;
+    src: url("../fonts/worksanssemibold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "WorkSans-SemiBold";
+    font-weight: 700;
+    font-display: block;
+    src: url("../fonts/worksansboldersemibold.woff") format("woff");
+}
+
+/* avenir-lt FONT */
+@font-face {
+    font-family: "avenirlt-light";
+    font-display: block;
+    src: url("../fonts/avenirltlight.woff") format("woff");
+}
+
+/**
+------------------------------------
+---------- GLOBAL ------------------
+------------------------------------
+**/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'avenirlt-light', 'Work Sans', sans-serif;
+    background-color: transparent;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+/**
+------------------------------------
+---------- HEADER ------------------
+------------------------------------
+**/
+.header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.header-content {
+    position: static;
+    display: grid;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+}
+
+.nav-block-grid {
+    display: block;
+    margin: 8.75% 5.9%;
+}
+
+/* Logo */
+.logo {
+    display: inline-table;
+    align-items: center;
+}
+
+.logo #orange-circle-shape {
+    display: table-cell;
+}
+
+#orange-circle-shape {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.logo #resume-author-name {
+    display: table-cell;
+    padding: 0px 5px;
+    margin-right: 15px;
+    font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
+    font-size: 25px;
+}
+
+.logo #resume-author-profession {
+    display: table-cell;
+    font-size: 21px;
+}
+
+/* Navigation menu */
+.nav {
+    width: 100%;
+    height: 100%;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: "max-height" .5s ease-out;
+}
+
+.menu a {
+    display: block;
+    padding: 20px 10px;
+    font-family: 'avenirlt-light';
+}
+
+/* Menu Icon */
+.hamb {
+    float: right;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Style label tag */
+.hamb-line {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: black;
+}
+
+/* Style span tag */
+.hamb-line::before,
+.hamb-line::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: black;
+    content: '';
+    transition: ease-out all .2s ;
+}
+
+.hamb-line::before {
+    top: 10px;
+}
+
+.hamb-line::after {
+    top: -10px;
+}
+
+.side-menu {
+    display: none;
+}
+
+/* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked~nav {
+    min-height: 100vh;
+    font-size: 30px;
+    text-align: center;
+}
+
+.side-menu:checked~.hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked~.hamb .hamb-line::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.side-menu:checked~.hamb .hamb-line::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.side-menu:checked~.logo {
+    display: none;
+}
+
+ul.menu {
+    padding: 35px 0px 0px;
+}
+
+/**
+--------------------------------------
+---------- CONTENTS ------------------
+--------------------------------------
+**/
+
+/* Horizontal lines as separator */
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(199, 199, 199);
+    border: none;
+}
+
+/* Stylized buttons  */
+.stylized-button {
+    width: 110px;
+    height: 110px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 100px;
+    transition-duration: 0.4s;
+    align-items: center;
+}
+
+/**
+------------------------------------
+---------- FOOTER ------------------
+------------------------------------
+**/
+
+footer div h3 {
+    margin: 22px 0px 5px;
+    font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
+    font-size: 22px;
+}
+
+footer div h3~i {
+    margin: 0% 1%;
+    font-size: 150%;
+}
+
+footer div p {
+    margin: 0px;
+    font-size: 21px;
+}
+
+i.fa-linkedin-in {
+    margin-right: 10px;
+}
+
+#copyright {
+    padding: 5% 6%;
+    font-size: 17px;
+}
+
+/**
+-------------------------------------------------------
+---------- RESPONSIVENESS MANAGEMENT ------------------
+-------------------------------------------------------
+**/
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+    padding: 0% 0% 3.7% 6%;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    hr {
+        height: 2px;
+        background-color: rgb(199, 199, 199);
+        border: none;
+    }
+
+    #orange-circle-shape {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        background-color: orange;
+        border-radius: 50%;
+    }
+
+    /* Header */
+    .header {
+        position: static;
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    /* Logo */
+    .logo {
+        display: grid;
+        margin-left: -2.4%;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+
+    .logo #resume-author-name {
+        font-size: 22px;
+    }
+
+    .logo #resume-author-profession {
+        font-size: 16px;
+    }
+
+    /* Navigation menu */
+    .nav-block {
+        display: grid;
+    }
+
+    .nav-block-grid {
+        display: flex;
+        width: calc(100% - 30px - 132px);
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -1%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .nav {
+        position: relative;
+        top: -23%;
+        float: right;
+        width: fit-content;
+        max-height: none;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .hamb {
+        display: none;
+    }
+
+    /* Footer */
+    footer.row {
+        padding-bottom: 2%;
+        margin: 0% 2.5%;
+        align-items: center;
+    }
+
+    footer div.col-3 {
+        padding: 0%;
+        margin: 1% 0%;
+    }
+
+    footer div h3 {
+        margin: 22px 0px 2%;
+        font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
+        font-size: 115%;
+    }
+
+    footer div h3~i {
+        margin: 0% 1%;
+        font-size: 117%;
+    }
+
+    footer div p {
+        margin: 0px;
+        font-size: 103%;
+    }
+
+    #copyright {
+        padding: 1.5%;
+    }
+
+    /* Responsive stylized button */
+    .stylized-button {
+        width: 140px;
+        height: 140px;
+        font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
+        font-size: 22px;
+        font-weight: bolder;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border: 1px black solid;
+        border-radius: 100px;
+        transition-duration: 0.4s;
+        align-items: center;
+    }
+}

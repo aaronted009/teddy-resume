@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Contact | CV</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-content">
+        <div class="nav-block">
+          <div class="nav-block-grid">
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu" />
+            <!-- Logo -->
+            <div class="logo">
+              <a href="../../index.html" title="Logo">
+                <span id="orange-circle-shape"></span>
+              </a>
+              <a
+                id="resume-author-name"
+                href="../../index.html"
+                title="Teddy Aballo"
+              >
+                Teddy Aballo
+              </a>
+              <p id="resume-author-profession">Developer</p>
+            </div>
+            <label class="hamb" for="side-menu"
+              ><span class="hamb-line"></span
+            ></label>
+            <!-- Menu -->
+            <nav class="nav">
+              <ul class="menu">
+                <li><a href="../resume/resume.html" title="Resume">Resume</a></li>
+                <li><a href="../projects/projects.html" title="Projects">Projects</a></li>
+                <li><a href="../contact/contact.html" title="Contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="contact-content">
+      <div class="contact-text-details">
+        <h1 id="contact-text-details-title">Contact</h1>
+        <!-- <br /> -->
+        <p id="contact-text-details-description">Looking forward to hearing from you</p>
+         <!-- <br /> -->
+        <br />
+        <p class="contact-text-details-element-title">Phone</p>
+         <!-- <br /> -->
+        <p class="contact-text-details-element-info">+229 67 91 76 20</p>
+         <!-- <br /> -->
+        <!-- <br /> -->
+        <p class="contact-text-details-element-title">Email</p>
+         <!-- <br /> -->
+        <p class="contact-text-details-element-info">aaronpromail@gmail.com</p>
+      </div>
+      <div class="contact-form-details">
+        <br />
+        <form class="grid-form" action="">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+
+          <!-- <br /> -->
+          <div>
+            <label for="email">Email *</label>
+            <input type="text" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+
+          <!-- <br /> -->
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="submit-button">
+            <button
+              class="stylized-button"
+              id="stylized-submit-button"
+              type="submit"
+              value="Submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="row">
+      <hr />
+      <div class="col-3" id="phone-text">
+        <h3>Phone</h3>
+        <p>+229 67 91 76 20</p>
+      </div>
+      <div class="col-3" id="email-text">
+        <h3>Email</h3>
+        <p>aaronpromail@gmail.com</p>
+      </div>
+      <div class="col-3" id="follow-me">
+        <h3>Follow Me</h3>
+        <!-- icons -->
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="col-3" id="copyright">
+        © 2023 By Teddy Aballo. <br />
+        Proudly created with skills.com
+      </div>
+    </footer>
+  </body>
+</html>

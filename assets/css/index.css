@@ -1,0 +1,192 @@
+/**
+------------------------------------
+---------- HELLO BOX ---------------
+------------------------------------
+**/
+
+/* HELLO BOX CONTAINER */
+.hello-box {
+    position: static;
+    display: grid;
+    width: 100%;
+    height: auto;
+    min-height: 626px;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-template-rows: repeat(4, min-content) 1fr;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+
+/* HELLO BOX TEXT PORTION */
+#hello-box-text {
+    margin-bottom: 20px;
+    order: 1;
+}
+
+#hello-box-text span {
+    font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
+    font-size: 55px;
+    letter-spacing: -0.02em;
+}
+
+#a-bit-about-me-text {
+    margin: 3% 0px;
+    font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
+    font-size: 25px;
+}
+
+#hello-box-text-brief {
+    margin: -2% 0px;
+    font-size: 21px;
+    line-height: 1.6em;
+}
+
+/* HELLO BOX IMAGE */
+.hello-box-image-container {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    order: 2;
+    place-self: center;
+}
+
+.hello-box-image {
+    width: 100%;
+    height: 100%;
+}
+
+#hello-box-image-itself {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* HELLO BOX BUTTONS */
+.buttons-flex-layout {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#resume-button {
+    display: inline-block;
+    background-color: orange;
+}
+
+#resume-button:hover {
+    background-color: white;
+}
+
+#projects-button {
+    display: inline-block;
+    background-color: red;
+}
+
+#projects-button:hover {
+    background-color: white;
+}
+
+#contact-button {
+    display: inline-block;
+    background-color: cyan;
+}
+
+#contact-button:hover {
+    background-color: white;
+}
+
+/**
+-------------------------------------------------------
+---------- RESPONSIVENESS MANAGEMENT ------------------
+-------------------------------------------------------
+**/
+
+@media only screen and (min-width: 768px) {
+    /* HELLO BOX CONTAINER */
+    .hello-box {
+        position: static;
+        display: grid;
+        width: 100%;
+        height: auto;
+        min-height: 799px;
+        padding-right: 20.25%;
+        padding-left: 20.25%;
+        margin-top: -2.5%;
+        grid-template-columns: auto auto;
+    }
+
+    /* HELLO BOX TEXT PORTION */
+    #hello-box-text {
+        margin: 2% 12% 0px;
+        flex: 1;
+        order: 2;
+    }
+
+    #hello-box-text span {
+        font-size: 100px;
+    }
+
+    #a-bit-about-me-text {
+        font-size: 22px;
+    }
+
+    #hello-box-text-brief {
+        font-size: 16px;
+    }
+
+    /* HELLO BOX IMAGE */
+    .hello-box-image-container {
+        width: 480px;
+        height: 480px;
+        margin: -12% 5% 0px 0px;
+        flex: 1;
+        order: 1;
+    }
+
+    .hello-box-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #hello-box-image-itself {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    .buttons-flex-layout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* HELLO BOX BUTTONS */
+    #resume-button {
+        display: inline-block;
+        background-color: orange;
+    }
+
+    #resume-button:hover {
+        background-color: white;
+    }
+
+    #projects-button {
+        display: inline-block;
+        background-color: red;
+    }
+
+    #projects-button:hover {
+        background-color: white;
+    }
+
+    #contact-button {
+        display: inline-block;
+        background-color: cyan;
+    }
+
+    #contact-button:hover {
+        background-color: white;
+    }
+}
