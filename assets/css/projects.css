@@ -39,6 +39,11 @@
     line-height: 1.6em;
 }
 
+.projects-content-section-summary a {
+    font-style: italic;
+    color: orange;
+}
+
 .projects-content-section-image>img {
     width: 100%;
     height: 250px;
