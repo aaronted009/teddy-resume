@@ -97,7 +97,7 @@ nav>ul {
 
 /* Logo */
 .logo {
-    display: inline-table;
+    display: flex;
     align-items: center;
 }
 
@@ -116,14 +116,14 @@ nav>ul {
 .logo #resume-author-name {
     display: table-cell;
     padding: 0px 5px;
-    margin-right: 15px;
+    margin-right: 5px;
     font-family: "WorkSans-SemiBold", "Work Sans", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .logo #resume-author-profession {
     display: table-cell;
-    font-size: 21px;
+    font-size: 17px;
 }
 
 /* Navigation menu */
@@ -145,7 +145,7 @@ nav>ul {
 /* Menu Icon */
 .hamb {
     float: right;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
 }
 
