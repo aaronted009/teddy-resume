@@ -59,7 +59,9 @@
 #hello-box-image-itself {
     width: 100%;
     height: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top; 
 }
 
 /* HELLO BOX BUTTONS */
@@ -140,7 +142,6 @@
     .hello-box-image-container {
         width: 480px;
         height: 480px;
-        margin: -12% 5% 0px 0px;
         flex: 1;
         order: 1;
     }
@@ -153,7 +154,9 @@
     #hello-box-image-itself {
         width: 100%;
         height: 100%;
-        border-radius: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top; 
     }
 
     .buttons-flex-layout {
