@@ -39,6 +39,17 @@
     line-height: 1.6em;
 }
 
+.projects-content-section-summary p.tech_stack{
+    font-style: italic;
+    margin-top: 5%;
+}
+
+.projects-content-section-summary a>img{
+    margin-top: 5%;
+    height: 20px;
+    width: 20px;
+}
+
 .projects-content-section-summary a {
     font-style: italic;
     color: orange;
@@ -96,6 +107,17 @@
         margin: -3% 0px;
         font-size: 101%;
         line-height: 1.6em;
+    }
+
+    .projects-content-section-summary p.tech_stack{
+        font-style: italic;
+        margin-top: 5%;
+    }
+
+    .projects-content-section-summary a>img{
+        margin-top: 5%;
+        height: 20px;
+        width: 20px;
     }
 
     .projects-content-section-image>img {

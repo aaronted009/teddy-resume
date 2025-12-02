@@ -14,7 +14,6 @@
     <title>🛠 Projects</title>
   </head>
   <body>
-
     <header class="header">
       <div class="header-content">
         <div class="nav-block">
@@ -41,9 +40,17 @@
             <!-- Menu -->
             <nav class="nav">
               <ul class="menu">
-                <li><a href="../resume/resume.html" title="Resume">Resume</a></li>
-                <li><a href="../projects/projects.html" title="Projects">Projects</a></li>
-                <li><a href="../contact/contact.html" title="Contact">Contact</a></li>
+                <li>
+                  <a href="../resume/resume.html" title="Resume">Resume</a>
+                </li>
+                <li>
+                  <a href="../projects/projects.html" title="Projects"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="../contact/contact.html" title="Contact">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -57,21 +64,194 @@
       <div class="projects-content-section">
         <div class="projects-content-section-text-details">
           <div class="projects-content-section-title">
-            <h2>Little web app game</h2>
+            <h2>Realtime pipeline (ETL)</h2>
           </div>
 
           <div class="projects-content-section-summary">
             <p>
-              Egg hunt. <a href="https://egghuntfun.vercel.app/">Uncover</a> hidden eggs in the grid.
+              The goal of this project was to create an end-to-end machine
+              learning project. We had to extract posts of specific communities
+              from Reddit. Using kafka producer and consumer, these posts will
+              then be transformed, using our trained-model for sentiments
+              analysis classification. Finally, we loaded the data into a
+              data-warehouse using PostgreSQL. All this process led to the
+              obtention of a real-time dashboard, to monitor the results for
+              each topics using PowerBI.
+            </p>
+            <p class="tech_stack">
+              Jupyter Notebook, Python, Pandas, Kafka, PostgreSQL, PowerBI
+            </p>
+            <a
+              href="https://github.com/aaronted009/end-to-end-ml"
+              target="_blank"
+            >
+              <img src="../../assets/images/github.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-content-section-image">
+          <img
+            src="../../assets/images/etl_extract_transform_load.png"
+            title="NLP"
+            alt="NLP"
+          />
+        </div>
+      </div>
+
+      <div class="projects-content-section">
+        <div class="projects-content-section-text-details">
+          <div class="projects-content-section-title">
+            <h2>Natural Language Processing</h2>
+          </div>
+
+          <div class="projects-content-section-summary">
+            <p>
+              From the Gutenberg dataset composed of many books, we retrieved
+              general topics those books were related to. We displayed the
+              wordcloud illustrating most frequent words and their order of
+              importance. This was done using bag-of-words then TF-IDF, Latent
+              Semantic Analysis model to group books into topics for further
+              similarity evaluation.
+            </p>
+            <p class="tech_stack">
+              Jupyter Notebook, Python, NLTK, Pandas, Wordcloud
+            </p>
+            <a
+              href="https://github.com/aaronted009/natural-language-processing"
+              target="_blank"
+            >
+              <img src="../../assets/images/github.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-content-section-image">
+          <img
+            src="../../assets/images/nlp-wordcloud.png"
+            title="NLP"
+            alt="NLP"
+          />
+        </div>
+      </div>
+
+      <div class="projects-content-section">
+        <div class="projects-content-section-text-details">
+          <div class="projects-content-section-title">
+            <h2>Exploratory Data Analysis</h2>
+          </div>
+
+          <div class="projects-content-section-summary">
+            <p>
+              Data exploratory of a grocery sales, products and other. The
+              dataset contains over 3 million orders and 200k users. The goal
+              here was to find valuable business insights.
+            </p>
+            <p class="tech_stack">Jupyter Notebook, Pandas, Seaborn</p>
+            <a
+              href="https://github.com/aaronted009/exploratory-data-analysis"
+              target="_blank"
+            >
+              <img src="../../assets/images/github.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-content-section-image">
+          <img
+            src="../../assets/images/exploratory-data-analysis.png"
+            title="EDA"
+            alt="EDA"
+          />
+        </div>
+      </div>
+
+      <div class="projects-content-section">
+        <div class="projects-content-section-text-details">
+          <div class="projects-content-section-title">
+            <h2>RAG chatbot</h2>
+          </div>
+
+          <div class="projects-content-section-summary">
+            <p>
+              Retrieved Augmented Generation chatbot. I contributed to the
+              implementation of an AI chatbot that provides answers to customers
+              based on uploaded knowledge base.
+            </p>
+            <p class="tech_stack">
+              Python, Javascript, FastAPI, ReactJS, Cohere, Vercel, Render,
+              Supabase, PostgreSQL
             </p>
           </div>
         </div>
 
         <div class="projects-content-section-image">
-          <img src="../../assets/images/egg-hunt-fun.png" title="Egg Hunt Fun" alt="" />
+          <img
+            src="../../assets/images/rag-chatbot.jpg"
+            title="RAG chatbot"
+            alt=""
+          />
         </div>
       </div>
-      
+
+      <div class="projects-content-section">
+        <div class="projects-content-section-text-details">
+          <div class="projects-content-section-title">
+            <h2>Little web app game</h2>
+          </div>
+
+          <div class="projects-content-section-summary">
+            <p>
+              Egg hunt.
+              <a href="https://egghuntfun.vercel.app/">Uncover</a> hidden eggs
+              in the grid.
+            </p>
+            <p class="tech_stack">
+              Typescript, Javascript, NextJS, ReactJS, Tailwind CSS, Vercel
+            </p>
+            <a href="https://github.com/aaronted009/egg-hunt" target="_blank">
+              <img src="../../assets/images/github.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+
+        <div class="projects-content-section-image">
+          <img
+            src="../../assets/images/egg-hunt-fun.png"
+            title="Egg Hunt Fun"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="projects-content-section">
+        <div class="projects-content-section-text-details">
+          <div class="projects-content-section-title">
+            <h2>CheckYourWork</h2>
+          </div>
+
+          <div class="projects-content-section-summary">
+            <p>
+              That was my final year project for the Master's degree. It's a
+              plagiarism detection app. This was done to detect plagiarism among
+              academic documents.
+            </p>
+            <p class="tech_stack">
+              Python, Django, Bootstrap, Webscraping, NLP, TensorFlow, Task
+              scheduling (Celery, RabbitMQ)
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-content-section-image">
+          <img
+            src="../../assets/images/checkyourwork-homepage.jpg"
+            title="CheckYourWork"
+            alt=""
+          />
+        </div>
+      </div>
+
       <div class="projects-content-section">
         <div class="projects-content-section-text-details">
           <div class="projects-content-section-title">
@@ -80,17 +260,30 @@
 
           <div class="projects-content-section-summary">
             <p>
-              Short of ideas? Generate your next meal <a href="https://what-do-we-eat-today-16fg.onrender.com/">here</a>.
+              Short of ideas? Generate your next meal
+              <a href="https://what-do-we-eat-today-16fg.onrender.com/">here</a
+              >.
             </p>
+            <p class="tech_stack">Python, FastAPI, Bootstrap, Render</p>
+            <a
+              href="https://github.com/aaronted009/what-do-we-eat-today"
+              target="_blank"
+            >
+              <img src="../../assets/images/github.svg" alt="GitHub" />
+            </a>
           </div>
         </div>
 
         <div class="projects-content-section-image">
-          <img src="../../assets/images/what-to-eat-today.png" title="What to eat today ?" alt="" />
+          <img
+            src="../../assets/images/what-to-eat-today.png"
+            title="What to eat today ?"
+            alt=""
+          />
         </div>
       </div>
-      
-      <div class="projects-content-section">
+
+      <!-- <div class="projects-content-section">
         <div class="projects-content-section-text-details">
           <div class="projects-content-section-title">
             <h2>A website for a local cultural festival.</h2>
@@ -106,9 +299,9 @@
         <div class="projects-content-section-image">
           <img src="../../assets/images/festival-adjra.png" title="Festival Adjra" alt="" />
         </div>
-      </div>
+      </div> -->
 
-      <div class="projects-content-section">
+      <!-- <div class="projects-content-section">
         <div class="projects-content-section-text-details">
           <div class="projects-content-section-title">
             <h2>A website improvement proposition to a personal development business.</h2>
@@ -124,7 +317,7 @@
         <div class="projects-content-section-image">
           <img src="../../assets/images/dev-perso-website.png" title="Développement perso club" alt="" />
         </div>
-      </div>
+      </div> -->
 
       <div class="projects-content-section">
         <div class="projects-content-section-text-details">
@@ -139,15 +332,20 @@
               and Master's degree. That project help also students in finding a
               work subject and possibly an internship.
             </p>
+            <p class="tech_stack">PHP, Laravel, Bootstrap</p>
           </div>
         </div>
 
         <div class="projects-content-section-image">
-          <img src="../../assets/images/graduation-cap.png" title="EOT Crossroads" alt="" />
+          <img
+            src="../../assets/images/graduation-cap.png"
+            title="EOT Crossroads"
+            alt=""
+          />
         </div>
       </div>
 
-      <div class="projects-content-section">
+      <!-- <div class="projects-content-section">
         <div class="projects-content-section-text-details">
           <div class="projects-content-section-title">
             <h2>A website for an ASECNA's governance candidate</h2>
@@ -165,8 +363,7 @@
         <div class="projects-content-section-image">
           <img src="../../assets/images/mahamat-asecna.png" title="Mahamat AWARE - ASECNA" alt="" />
         </div>
-      </div>
-
+      </div> -->
     </div>
 
     <footer class="row">
@@ -177,7 +374,9 @@
       </div>
       <div class="col-3" id="email-text">
         <h3>Email</h3>
-        <a href="mailto:aaronpromail@gmail.com" title="email"><p>aaronpromail@gmail.com</p></a>
+        <a href="mailto:aaronpromail@gmail.com" title="email"
+          ><p>aaronpromail@gmail.com</p></a
+        >
       </div>
       <div class="col-3" id="follow-me">
         <h3>Follow Me</h3>
@@ -196,7 +395,8 @@
         </a>
       </div>
       <div class="col-3" id="copyright">
-        &copy; 2025 By Teddy Aballo. <br /> <!--TODO : Update with automatic date year set.-->
+        &copy; 2025 By Teddy Aballo. <br />
+        <!--TODO : Update with automatic date year set.-->
       </div>
     </footer>
   </body>
